@@ -1,0 +1,51 @@
+### Bienvenue sur le site Python Starter 
+
+![Logo Python](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+
+Bienvenue sur votre site d'apprentissage de Python !
+
+<span style="color:#7DF9FF; font-weight:bold;">À propos du site<span>
+
+Notre site est conçu pour les débutants qui souhaitent apprendre à programmer en Python de manière simple et efficace. Nous proposons une série de cours organisés de manière progressive pour vous guider à travers les concepts fondamentaux de la programmation en Python.
+
+
+<span style="color:#7DF9FF; font-weight:bold;">Les Variables<span>
+
+Dans ce cours, vous apprendrez ce qu'est une variable en Python, comment les déclarer, les types de données qu'elles peuvent contenir, et comment les utiliser dans vos programmes.
+
+<span style="color:#7DF9FF; font-weight:bold;">Les Types de Données<span>
+
+Ce cours vous introduira aux différents types de données disponibles en Python, tels que les entiers, les flottants, les chaînes de caractères, les listes, les tuples et les dictionnaires.
+
+<span style="color:#7DF9FF; font-weight:bold;">Les Opérateurs<span>
+
+Découvrez les opérateurs arithmétiques, logiques et de comparaison en Python, ainsi que leur utilisation dans l'évaluation des expressions.
+
+<span style="color:#7DF9FF; font-weight:bold;">Les Conditions<span>
+
+Dans ce cours, vous apprendrez à utiliser les instructions if, else et elif pour créer des structures de contrôle conditionnelles dans vos programmes.
+
+<span style="color:#7DF9FF; font-weight:bold;">Les Boucles<span>
+
+Découvrez les boucles for et while en Python et apprenez à les utiliser pour itérer sur des séquences de données et exécuter des blocs de code répétitifs.
+
+<span style="color:#7DF9FF; font-weight:bold;">Les Fonctions<span>
+
+Ce cours vous enseignera la création et l'utilisation de fonctions en Python pour encapsuler du code réutilisable et modulaire.
+
+<span style="color:#7DF9FF; font-weight:bold;">Les Conversions<span>
+
+Apprenez à convertir des données entre différents types en Python, tels que la conversion de chaînes de caractères en nombres et vice versa.
+
+<span style="color:#7DF9FF; font-weight:bold;">Les Modules<span>
+
+Découvrez comment utiliser des modules en Python pour organiser et réutiliser du code, ainsi que pour étendre les fonctionnalités de base du langage.
+
+
+<span style="color:#7DF9FF; font-weight:bold;">Exercices interactifs<span>
+
+En plus des cours théoriques, nous proposons également des exercices interactifs pour chaque cours afin que vous puissiez mettre en pratique ce que vous avez appris. La pratique est essentielle pour maîtriser Python, alors n'hésitez pas à vous entraîner et à expérimenter avec le code !
+
+Commencez dès maintenant votre parcours d'apprentissage en explorant nos cours et en vous lançant dans les exercices interactifs. Bonne chance et bon apprentissage !
+
+

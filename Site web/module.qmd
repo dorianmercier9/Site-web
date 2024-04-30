@@ -1,0 +1,31 @@
+## 8 - Module
+
+Les modules en Python sont des fichiers contenant du code Python réutilisable.
+
+- Organiser le code en regroupant des fonctions, des classes et des variables connexes.
+- Importer un module : 'import’
+- Modules prêts à l'emploi pour des tâches diverses . ex : 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-Learn', 'TensorFlow', 'PyTorch', 'Django', 'Flask', 'Requests'
+
+```{.python}
+def somme(a, b):
+    return a + b
+
+resultat = somme(10, 5)
+print(resultat)
+```
+15
+
+```{.python}
+from monpackage import operations
+
+resultat = operations.division(90, 10)
+print(resultat)
+```
+9.0
+
+```{.python}
+from monpackage import operations
+
+resultat = operations.division(90, 10)
+print(resultat)
+```

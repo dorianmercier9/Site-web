@@ -1,0 +1,121 @@
+### LES VARIABLES
+
+![Variables Python](https://ipcisco.com/wp-content/uploads/2021/04/python-variables-ipcisco-1.jpg)
+
+
+
+Les variables sont des conteneurs permettant de stocker des valeurs de données, telles que des nombres ou des chaînes de caractères.
+
+- Affectation **(=)**.
+- Python détermine automatiquement le type de données en fonction de la valeur attribuée.
+- Ecraser les valeurs des variables en les réaffectant.
+- Sensible à la casse : "X" et "x" sont deux variables différentes
+- Imprimer plusieurs variables dans une seule instruction print avec **(,)**
+- Plusieurs valeurs à plusieurs variables ou plusieurs variables à une seule valeur sur une seule ligne.
+- Dénomination des variables incluent :
+    - la casse camel : *testVariableCase*
+    - la casse Pascal : *TestVariableCase*
+    - la casse serpent : *test_variable_case*
+
+- Evitez de:
+    - commencer les noms de variables par des chiffres
+    - utiliser des symboles tels que des tirets ou des espaces
+    - mélanger des chaînes de caractères et des nombres entiers directement dans la concaténation.
+
+
+
+
+
+```{.python}
+x = 10
+print(x)
+type(x)
+```
+10
+
+int
+
+```{.python}
+y = "carbonara"
+print(y)
+type(y)
+```
+carbonara
+
+str
+
+```{.python}
+# y != Y
+Y = "Pates à la carbonara"
+print(Y)
+```
+Pates à la carbonara
+
+```{.python}
+# affectation de valeurs différentes
+x, y, z = "Carbonara", "Bolognaise", "Pesto"
+print(x)
+print(y)
+print(z)
+```
+Carbonara
+Bolognaise
+Pesto
+
+```{.python}
+# affectation de la même valeur
+x = y = z = "Carbonara"
+print(x)
+print(y)
+print(z)
+```
+Carbonara
+Carbonara
+Carbonara
+
+```{.python}
+# creation une liste et affectation
+pates = []
+pates = ["Carbonara", "Bolognaise", "Pesto"]
+x, y, z = pates
+print(x)
+print(y)
+print(z)
+```
+Carbonara
+Bolognaise
+Pesto
+
+```{.python}
+# concatenation : seulement chaine de caractère ensemble
+x = "Les pates à la " + 'carbonara sont mes préférées'
+print(x)
+```
+Les pates à la carbonara sont mes préférées
+
+```{.python}
+x = "Les pates"
+y = "à la carbonara"
+z = "sont mes préférées"
+print(x, y, z)
+```
+Les pates à la carbonara sont mes préférées
+
+```{.python}
+x = 2
+y = 3
+z = 4
+print(x+y+z)
+```
+9
+
+```{.python}
+# La f-string ? 
+
+nom = "Dubalcon"
+prenom = "Jean"
+age = 55
+
+print(f"Bonjour, je m'appelle {prenom} {nom} et j'ai {age} ans.")
+```
+Bonjour, je m'appelle Jean Dubalcon et j'ai 55 ans.

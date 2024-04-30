@@ -1,0 +1,253 @@
+### Types de données
+
+
+
+![Types de données en Python](https://cdn.educba.com/academy/wp-content/uploads/2019/09/Python-Variable-Types.png)
+
+
+Les types de données en Python classent les données et déterminent les opérations autorisées.
+
+- Données **numériques** : les entiers, les flottants et les nombres complexes.
+- Données **booléennes**, deux valeurs : Vrai et Faux.
+- Données **séquentielles** : les chaînes, les listes et les tuples.
+    - Les *chaînes* de caractères sont indexées, l'indexation commençant à 0. Elles peuvent être placées entre guillemets simples, doubles ou triples.
+    - Les *listes* stockent plusieurs valeurs, séparées par des virgules, et peuvent contenir différents types de données.
+
+
+    - Les *tuples* sont similaires aux listes mais sont immuables, ce qui signifie qu'ils ne peuvent pas être modifiés après leur création.
+    - Les *ensembles* sont des collections non ordonnées de valeurs uniques et sont utiles pour la recherche de valeurs uniques et les opérations sur les ensembles.
+    - Les *dictionnaires* reposent sur des paires clé-valeur pour stocker des données, et les valeurs sont accessibles à l'aide des clés. Les *dictionnaires* sont mutables, autorisant les mises à jour et les suppressions.
+    [](https://user.oc-static.com/upload/2023/04/29/16827780421019_image9.png)]()
+
+
+```{.python}
+# entier
+type(-10 + 50)
+```
+int
+
+```{.python}
+# float
+type(-10 + 50.4)
+```
+float
+
+```{.python}
+# complexe ! fonctionne que avec j pas i !
+type(10+ 3j)
+```
+complex
+
+```{.python}
+type(False)
+type(True)
+type(2>5)
+2> 5
+2<5
+2 == 2
+```
+bool
+
+```{.python}
+# chaines
+'Simple'
+"Double"
+ligneMultiple = """
+Pour la rédaction d'une chaine de caractére sur 
+plusieurs lignes
+"""
+print(ligneMultiple)
+type(ligneMultiple)
+```
+Pour la rédaction d'une chaine de caractére sur 
+plusieurs lignes
+
+str
+
+```{.python}
+# Attention : utiliser une double quote lorsque qu'il y a des apostrophes dans une phrase
+# print('J'ai 15 ans')
+print("J'ai faim")
+```
+
+```{.python}
+# Attention : utiliser une double quote lorsque qu'il y a des apostrophes dans une phrase
+# print('J'ai 15 ans')
+print("J'ai faim")
+```
+
+```{.python}
+a =  "Bonjour Paris"
+print(a[0:6])
+print(a[-3]) # a l'inverse
+print(a[2:5])
+```
+Bonjour
+r
+njour
+
+```{.python}
+a*3
+```
+Bonjour ParisBonjour ParisBonjour Paris 
+
+```{.python}
+a+ '  ' +a
+```
+Bonjour Paris  Bonjour Paris
+
+```{.python}
+# liste : on peut tout mettre dans une liste
+[1, 2, 3]
+["Pates", 3, "Fourchettes", True, ["a", "b"]]
+```
+['Pates', 3, 'Fourchettes', True, ['a', 'b']]
+
+```{.python}
+# Ajout
+pates = ["Bolognaise", "Carbonara", "Pesto"]
+pates.append("Nature")
+pates
+```
+['Bolognaise', 'Carbonara', 'Pesto', 'Nature']
+
+```{.python}
+# Ajout
+#changer l'ordre
+pates[0] = "Nature"
+pates[3] = "Carbonara"
+pates
+```
+['Pistache', 'Chocolat', 'Fraise', 'Vanille']
+
+```{.python}
+listList = ["Pates", 3, "Fourchettes", True, ["a", "b"]] # nested list
+listList[4]
+listList[4][1]
+```
+'b'
+
+```{.python}
+test = [1,4, 90]
+test.remove(1)
+test.append(34)
+help(list) # toutes les méthodes
+```
+Help on class list in module builtins:
+
+class list(object)
+ |  list(iterable=(), /)
+ |
+ |  Built-in mutable sequence.
+ |
+ |  If no argument is given, the constructor creates a new empty list.
+ |  The argument must be an iterable if specified.
+ |
+ |  Methods defined here:
+ |
+ |  __add__(self, value, /)
+ |      Return self+value.
+ |
+ |  __contains__(self, key, /)
+ |      Return bool(key in self).
+ |
+ |  __delitem__(self, key, /)
+ |      Delete self[key].
+ |
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |
+ |  __ge__(self, value, /)
+...
+|  Data and other attributes defined here:
+ |
+ |  __hash__ = None
+
+
+```{.python}
+# longueur d'une liste
+len(test)
+```
+3
+
+```{.python}
+# tuple : ne change jamais (data pour ce qui ne change jamais)
+exempleTuple = (1, 2, 3, 1, "a")
+exempleTuple[1] # avec un index mais pas modifiable
+# exempleTuple[0] = "test" # mais pas modifiable
+```
+2
+
+```{.python}
+# sets : comme liste et tuple mais pas d'index l'avantage est qu'il n'affiche que les valeur unique
+ensembleSet = {1, 3, 90, "test", 3}
+print(ensembleSet)
+```
+{1, 90, 3, 'test'}
+
+```{.python}
+# utile pour comparer deux sets.
+set1 = {2, 3, 5, 80, 23}
+set2 = {1, 2, 3, 10, 80}
+print(set1 | set2) # unique en combinant les deux sets
+print(set1 & set2) # présent dans les deux
+print(set1 - set2) # ce qui ne matche pas entre les deux sets
+print(set1 ^ set2) # unique dans l'un ou l'autre
+```
+{1, 2, 3, 5, 10, 80, 23}
+{80, 2, 3}
+{5, 23}
+{1, 5, 23, 10}
+
+```{.python}
+# dictionnaires
+# clé/valeur
+dico = {'nom': 'Dorian', 'age': 26 , 'pates préférées' : 'Carbonara'}
+type(dico)
+```
+dict
+
+```{.python}
+dico.keys()
+```
+dict_keys(['nom', 'age', 'pates préférées'])
+
+
+```{.python}
+dico.values()
+```
+dict_values(['Dorian', 26, 'Carbonara'])
+
+```{.python}
+dico.items()
+```
+dict_items([('nom', 'Dorian'), ('age', 26), ('pates préférées', 'Carbonara')])
+
+```{.python}
+dico['nom'] # index par la clef
+```
+'Dorian'
+
+```{.python}
+dico['nom'] = "Michel"
+dico
+```
+{'nom': 'Michel', 'age': 26, 'pates préférées': 'Carbonara'}
+
+```{.python}
+dico.update({'nom': 'Dorian', 'age': 26 , 'poids' : '70kg'})
+dico
+```
+{'nom': 'Dorian', 'age': 26, 'pates préférées': 'Carbonara', 'poids': '70kg'}
+
+```{.python}
+del dico['poids']
+dico
+```
+{'nom': 'Dorian', 'age': 26, 'pates préférées': 'Carbonara'}
+
+```{.python}
+var  = 2
+print(isinstance(var, int))
+```
+True

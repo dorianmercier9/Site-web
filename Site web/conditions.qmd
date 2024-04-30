@@ -1,0 +1,153 @@
+##  Les conditions : if , elif, else
+
+
+![Les conditions](https://www.aipython.in/wp-content/uploads/2020/05/If-else-statement-in-Python.jpg)
+
+
+
+Une instruction "if else" en Python vous permet d'exécuter différents blocs de code en fonction de conditions. Il est essentiel de comprendre les instructions "if else" pour contrôler le flux de vos programmes Python en fonction de différentes conditions.
+
+
+- L'instruction **if** vérifie si une condition est vraie et, si c'est le cas, elle exécute un bloc de code spécifique.
+- L'instruction **else** spécifie un bloc de code à exécuter si la condition "if" initiale est fausse.
+- Vous pouvez avoir plusieurs instructions **elif** (else if) en plus des instructions initiales "if" et "else".
+- Vous pouvez utiliser des opérateurs logiques tels que **and** et **or** dans les conditions "if" pour évaluer plusieurs conditions simultanément.
+- Les instructions **if imbriquées** peuvent être utilisées pour créer des structures logiques plus complexes.
+- Ecrire des instructions **if else en 1 ligne** our les cas simples.
+
+
+
+
+```{.python}
+if 30 < 15:
+    print("if marche")
+else:
+    print("else fonctionne")
+```
+else fonctionne
+
+```{.python}
+if 30 < 15:
+    print("if marche")
+elif 25 < 30:
+    print("elif fonctionne")
+else:
+     print("else fonctionne")
+```
+elif fonctionne
+
+```{.python}
+if 30 < 15:
+    print("if marche")
+elif 25 < 30:
+    print("elif1 fonctionne") 
+elif 25 < 50:
+    print("elif2 fonctionne")
+else:
+     print("else fonctionne")
+```
+elif1 fonctionne
+
+```{.python}
+if (25 < 10) or (10 < 90):  
+    print("if marche")
+elif 25 < 30:
+    print("elif1 fonctionne")
+elif 25 < 50:
+    print("elif2 fonctionne")
+else:
+     print("else fonctionne")
+```
+if marche
+
+```{.python}
+print("if fonctionne") if 10 > 30 else print("else fonctionne")
+```
+else fonctionne
+
+```{.python}
+if (25 < 10) or (10 < 90):  
+    print("if marche")
+    if (90 > 30):
+        print("if imbriqué marche aussi")
+    else:
+        print("else imbriqué fonctionne")
+elif 25 < 30:
+    print("elif1 fonctionne")
+elif 25 < 50:
+    print("elif2 fonctionne")
+else:
+     print("else fonctionne")
+```
+if marche
+if imbriqué marche aussi
+
+```{.python}
+# Introduction au case 
+def switch(mois):
+  if mois == 1:
+    return 'Janvier'
+  elif mois == 2:
+    return 'Fevrier'
+  elif mois == 3:
+    return 'Mars'
+  elif mois == 4:
+    return 'Avril'
+  elif mois == 5:
+    return 'Mai'
+  elif mois == 6:
+    return 'Juin'
+  elif mois == 7:
+    return 'Juillet'
+  elif mois == 8:
+    return 'Aout'
+  elif mois == 9:
+    return 'Septembre'
+  elif mois == 10:
+    return 'Octobre'
+  elif mois == 11:
+    return 'Novembre'
+  elif mois == 12:
+    return 'Decembre'
+  else:
+    return "Pas un mois de l'année"
+
+switch(8)
+```
+'Aout'
+
+```{.python}
+# match-case en Python
+def switchMatch(jour):
+    match jour: 
+        case 1:
+            return 'Janvier'
+        case 2:
+            return 'Fevrier'
+        case 3:
+            return 'Mars'
+        case 4:
+            return 'Avril'
+        case 5:
+            return 'Mai'
+        case 6:
+            return 'Juin'
+        case 7:
+            return 'Juillet'
+        case 8:
+            return 'Aout'
+        case 9:
+            return 'Septembre'
+        case 10:
+            return 'Octobre'
+        case 11:
+            return 'Novembre'
+        case 12:
+            return 'Decembre'
+        case _:
+            return "Pas un mois de l'année"
+        
+print(switch(4), switchMatch(9))
+```
+
+Avril Septembre

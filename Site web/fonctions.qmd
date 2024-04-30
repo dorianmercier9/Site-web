@@ -1,0 +1,115 @@
+## 6 - Les fonctions
+
+![Les boucles](https://nsinfo.yo.fr/images/menu_python.jpg)
+
+les fonctions sont des blocs de code qui sont exécutés lorsque vous les appelez. Vous pouvez personnaliser les fonctions pour qu'elles effectuent différentes tâches en leur passant différents arguments.
+
+- Définies à l'aide du mot-clé **"def"*, suivi du **nom de la fonction** et de **parenthèses**.
+- Passer des **arguments** aux fonctions pour fournir des valeurs d'entrée.
+- Les **arguments arbitraires** et les **mots-clés arbitraires** sont utilisés lorsque vous ne savez pas à l'avance combien d'arguments vous allez passer.
+    - arguments arbitraires, utilisez *args
+    - mots-clés arbitraires, utilisez **kwargs.
+- Chaque fonction doit être responsable d’une seule et unique fonctionnalité, et rien de plus.
+
+```{.python}
+# fonctions renvoie un résultat 
+def fonction1():
+    print("Bonjour!")
+premiere_fonction()
+```
+Oui!
+
+```{.python}
+# fonctions renvoie un résultat 
+def nombre_carre(nombre): # argument nombre
+    print(nombre ** 2)
+nombre_carre(10)
+```
+100
+
+```{.python}
+def nombre_puissance(nombre, puissance): # argument nombre
+    print(nombre ** puissance)
+```
+
+```{.python}
+nombre_puissance(10, 3) # donner les deux arguments !
+# nombre_puissance(5) # fonctionne pas
+```
+1000
+
+```{.python}
+# pratique pour utiliser les arguments dans l'ordre qu'on veut
+nombre_puissance(puissance = 3, nombre = 10) 
+```
+1000
+
+```{.python}
+# fonction qui renvoie un nombre à la puissance
+def nombre_puissance(nombre, puissance): 
+    # documenter le code
+    """
+    cette fonction calcule un nombre à la puissance et retourne le résultat.    
+    Parameters:    
+    nombre (int): le premier nombre 
+    puissance (int): le deuxième nombre    
+    Returns:    int : nombre a la puissance     
+    
+    """
+    return nombre ** puissance
+
+# interaction  avec un utilisateur 
+num = int(input("Saississez un nombre entier : "))
+power = int(input("Saississez un nombre entier : "))
+
+print("Le résultat est :", nombre_puissance(nombre = num, puissance = power))
+#Si premier nombre rentré = 10 et deuxieme nombre rentré = 3
+```
+1000
+
+
+```{.python}
+name = input("Enter your name:")
+age = input("Enter your age:")
+
+print("Welcome,",name, "! you are now ", age)
+#Enter your name: Dorian 
+#Enter your age: 26
+```
+Welcome, Dorian ! you are now  26
+
+```{.python}
+# Arguments arbitraire on ne connait pas le nombre de parametre à l'avance
+def nombre_args(*nombre):
+    print(nombre[0]*nombre[1])
+```
+
+```{.python}
+nombre_args(5, 10, 4, 90)
+# Multiplication de l'argument à la position [O] = 5 etde l'agument à la position [1] = 10
+```
+50
+
+```{.python}
+args_tuple = (5, 6, 8, 9)
+nombre_args(*args_tuple) # mettre etoile pour le tuple
+```
+30
+
+```{.python}
+def nombre_puissance(nombre, puissance): # argument nombre
+    print(nombre ** puissance)
+```
+
+
+```{.python}
+# pratique pour définir des clé d'arguments
+def nombre_kwarg(**nombre):
+    print('Mon age est : ' + nombre['age'] + ' et ma taille est : ' + nombre["taille"])
+```
+
+```{.python}
+nombre_kwarg(age  = '26', taille = '1.75')
+```
+Mon age est : 26 et ma taille est : 1.75
+

@@ -1,0 +1,55 @@
+## 7 - Conversion de type de données
+
+![Conversion](https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2022_08_Type-Conversion-in-Python.jpg)
+
+
+Python vous permet de modifier facilement les types de données afin de manipuler et de travailler efficacement.
+
+```{.python}
+# caractere -> entier
+num_str = "50"
+num_int = 50
+# num_int + num_str # ne fonctionne
+num_int + int(num_str) # fonctionne
+```
+100
+
+```{.python}
+# liste -> tuple
+liste = [1, 3, 8]
+tuple_la_liste = tuple(liste)
+type(tuple_la_liste)
+```
+tuple
+
+```{.python}
+# liste -> set
+set_la_liste = set(liste)
+type(set_la_liste)
+```
+set
+
+```{.python}
+# dictionnaire -> liste
+dico = {'nom': 'Dorian', 'age': 26 , 'pates préférées' : ['Carbonara','Pesto']}
+liste_cle = list(dico.keys())
+liste_valeur =  list(dico.values())
+```
+
+```{.python}
+print(liste_cle)
+print(liste_valeur)
+```
+['nom', 'age', 'pates préférées']
+['Dorian', 26, ['Carbonara', 'Pesto']]
+
+```{.python}
+# chaine -> liste
+chaine = "J'aime les pizzas"
+liste_chaine = list(chaine)
+print(liste_chaine)
+```
+['J', "'", 'a', 'i', 'm', 'e', ' ', 'l', 'e', 's', ' ', 'p', 'i', 'z', 'z', 'a', 's']
+
+
+

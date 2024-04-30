@@ -1,0 +1,37 @@
+project:
+  type: website
+
+website:
+  title: "Python"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: Variables
+      - href: types.qmd
+        text: Types de Données
+      - href: operateurs.qmd
+        text: Opérateurs
+      - href: conditions.qmd
+        text: Conditions
+      - href: boucles.qmd
+        text: Boucles
+      - href: fonctions.qmd
+        text: Fonctions
+      - href: conversion.qmd
+        text: Conversion
+      - href: module.qmd
+        text: Module
+      - href: exo.qmd
+        text: Exercices
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

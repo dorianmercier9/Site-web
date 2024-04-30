@@ -1,0 +1,89 @@
+### Les Opérateurs
+
+![Logo operateurs](https://lecoursgratuit.com/wp-content/uploads/2023/02/FB_IMG_1677033930797-654x800.jpg){ width=45% }
+
+
+
+Les opérateurs Python sont utilisés pour effectuer des opérations sur les variables et les valeurs.
+
+**Les opérateurs de comparaison** en Python incluent égal à, différent de, supérieur à, inférieur à, supérieur ou égal à, et inférieur ou égal à.
+
+| Opérateur comparaison | Description |
+| ----------- | ----------- |
+| Egalité | == |
+| Différent de |!= |
+| Supérieur | > |
+| Inférieur | < |
+| Supérieur ou égale | >= |
+| Inférieur ou égale | <= |
+
+
+ - Renvoient soit Vrai, soit Faux, en fonction du résultat de la comparaison.
+
+**Les opérateurs logiques** et, ou et non sont souvent combinés avec les opérateurs de comparaison.
+
+| Opérateur logique| Description | Résultat |
+| ----------- | ----------- |----------- |
+| And | and | True si les deux propositions sont vraies|
+| Or |  or | True si au moins une des propositions est Vraie |
+| Not | not | inverse de l'instruction |
+
+
+**Les opérateurs d'appartenance** in et not in sont utilisés pour vérifier si une valeur ou une chaîne de caractères se trouve à l'intérieur d'une autre valeur, chaîne de caractères ou séquence.
+
+| Opérateur logique| Description | Résultat |
+| ----------- | ----------- |----------- |
+| In | in | True si la valeur spécifiée est présente dans l'objet.|
+| Not in | not in | True si la valeur spécifiée n'est pas présente dans l'objet.|
+
+
+
+```{.python}
+# comparaison
+100 == 100
+```
+True
+
+```{.python}
+100 == 500
+```
+False
+
+```{.python}
+100 != 500
+```
+True
+
+```{.python}
+'Carbonara' == 'Bolognaise'
+```
+False
+
+```{.python}
+'Carbonara' != 'carbonara'
+10 < 50
+```
+True
+
+```{.python}
+# Logique
+not (100 > 500 ) and (500 > 100)
+```
+True 
+
+```{.python}
+(100 > 500 ) or (500 > 100)
+```
+True
+
+```{.python}
+(100 > 500 ) or (500 > 100)
+```
+True
+
+
+```{.python}
+liste = [1, 4, 5, 50]
+40 not in liste
+```
+True

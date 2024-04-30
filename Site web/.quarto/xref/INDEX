@@ -1,0 +1,47 @@
+{
+  "index.qmd": {
+    "index.html": "99bf3369"
+  },
+  "about.qmd": {
+    "about.html": "9fdaa28e"
+  },
+  "Pandas.qmd": {
+    "Pandas.html": "5fca9e83"
+  },
+  "Datavisualisation.qmd": {
+    "Datavisualisation.html": "7f91b829"
+  },
+  "types.qmd": {
+    "types.html": "5674dbf2"
+  },
+  "operators.qmd": {
+    "operators.html": "ebea18f3"
+  },
+  "operateurs.qmd": {
+    "operateurs.html": "c125fa3b"
+  },
+  "about.ipynb": {
+    "about.html": "c64a737b"
+  },
+  "variables.qmd": {
+    "variables.html": "d4c72e73"
+  },
+  "exo.qmd": {
+    "exo.html": "b8c30bb9"
+  },
+  "conditions.qmd": {
+    "conditions.html": "585e4199"
+  },
+  "conversion.qmd": {
+    "conversion.html": "6b378ccd"
+  },
+  "boucles.qmd": {
+    "boucles.html": "34399870"
+  },
+  "fonctions.qmd": {
+    "fonctions.html": "6d01dd36"
+  },
+  "module.qmd": {
+    "module.html": "a9f7a816"
+  }
+}

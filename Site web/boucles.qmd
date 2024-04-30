@@ -1,0 +1,132 @@
+## Les boucles
+
+![Les boucles](https://olivierschmitt.fr/wp-content/uploads/2015/04/cours-python-les-boucles-1.jpg)
+
+**La boucle for** est utilisée pour parcourir des structures de données : liste, tuple, tableau, chaîne de caractères ou un dictionnaire.
+
+> La boucle commence par examiner le premier élément de la séquence, effectue des actions dans son corps, puis passe à l'élément suivant jusqu'à ce que la séquence soit terminée.
+
+ - Boucle avec mot-clé **"for"**, une **variable temporaire** pour contenir chaque élément, le mot-clé **"in"** et la séquence à parcourir, suivis  de **deux points**. Jusqu'au bout de l'élément
+- Appliquer des **opérations sur la variable temporaire** dans le corps de la boucle pour effectuer diverses opérations.
+- **Imbriquer des for"**
+- Sur les *dictionnaires*, on peut **boucler sur les clés et les valeurs à l'aide de la méthode "items()"**.
+
+**La boucle while** itère sur un bloc de code tant qu'une condition spécifiée est vraie.
+Contrairement aux boucles "for", les boucles "while" continuent l'itération tant que la condition reste vraie.
+
+- **"break"** pour quitter prématurément une boucle "while", même si la condition est toujours vraie.
+- **"else"** peut être utilisée avec une boucle "while" pour spécifier un bloc de code qui s'exécutera lorsque la condition de la boucle ne sera plus vraie.
+- **"continue"** permet d'ignorer le code restant dans l'itération actuelle de la boucle et de passer à l'itération suivante.
+- !! **Soyez prudent lorsque vous utilisez "continue" afin d'éviter de créer des boucles infinies.**
+
+
+```{.python}
+nombres = [16, 92, 120, 60, 21]
+```
+
+```{.python}
+for num in nombres:
+    print(num)
+```
+16
+92
+120
+60
+21
+
+```{.python}
+for hey in nombres:
+    print(hey)
+```
+16
+92
+120
+60
+21
+
+```{.python}
+dico = {'nom': 'Dorian', 'age': 26 , 'pates préférées' : ['Carbonara','Pesto']}
+for d in dico.values():
+    print(d)
+```
+Dorian
+26
+['Carbonara', 'Pesto']
+
+
+```{.python}
+for d in dico.keys():
+    print(d)
+```
+nom
+age
+glaces préférées
+
+```{.python}
+for d in dico.keys():
+    print(d)
+```
+nom -> Dorian
+age -> 26
+pates préférées -> ['Carbonara', 'Pesto']
+
+```{.python}
+# while
+number = 0
+while number < 100:
+        print(number)
+        number = number + 10
+```
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+
+```{.python}
+number = 0
+while number < 50:
+        print(number)
+        if number == 30:
+            break
+        number = number + 10
+```
+0
+10
+20
+30
+
+```{.python}
+# boucle qui se stop car prend la valeur +1 avant de s'afficher
+number = 0
+while number < 50:
+    number = number + 10
+    if number == 30:
+        continue
+    print(number)
+else:
+    print("ne satisfait plus la condition")
+```
+10
+20
+40
+50
+ne satisfait plus la condition
+
+
+```{.python}
+while True: # gestion des erreurs
+    try: 
+        x = int(input("Entrez un nombre entier : ")) 
+        break 
+    except ValueError: 
+        print("Mince ! Ce n'est pas un nombre entier. Essayez encore...")
+# Nombre rentré = 10.5
+```
+Mince ! Ce n'est pas un nombre entier. Essayez encore...
+
