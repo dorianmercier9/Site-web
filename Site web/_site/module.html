@@ -135,7 +135,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Types de Données</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./operateurs.html" aria-current="page"> 
+    <a class="nav-link" href="./operateurs.html"> 
 <span class="menu-text">Opérateurs</span></a>
   </li>  
   <li class="nav-item">
@@ -153,6 +153,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link" href="./conversion.html"> 
 <span class="menu-text">Conversion</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./module.html" aria-current="page"> 
+<span class="menu-text">Module</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./exo.html"> 
@@ -174,7 +178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#les-opérateurs" id="toc-les-opérateurs" class="nav-link active" data-scroll-target="#les-opérateurs">Les Opérateurs</a></li>
+  <li><a href="#module" id="toc-module" class="nav-link active" data-scroll-target="#module">8 - Module</a></li>
   </ul>
 </nav>
     </div>
@@ -184,129 +188,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="les-opérateurs" class="level3">
-<h3 class="anchored" data-anchor-id="les-opérateurs">Les Opérateurs</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://lecoursgratuit.com/wp-content/uploads/2023/02/FB_IMG_1677033930797-654x800.jpg" class="img-fluid figure-img" style="width:45.0%"></p>
-<figcaption>Logo operateurs</figcaption>
-</figure>
-</div>
-<p>Les opérateurs Python sont utilisés pour effectuer des opérations sur les variables et les valeurs.</p>
-<p><strong>Les opérateurs de comparaison</strong> en Python incluent égal à, différent de, supérieur à, inférieur à, supérieur ou égal à, et inférieur ou égal à.</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Opérateur comparaison</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Egalité</td>
-<td>==</td>
-</tr>
-<tr class="even">
-<td>Différent de</td>
-<td>!=</td>
-</tr>
-<tr class="odd">
-<td>Supérieur</td>
-<td>&gt;</td>
-</tr>
-<tr class="even">
-<td>Inférieur</td>
-<td>&lt;</td>
-</tr>
-<tr class="odd">
-<td>Supérieur ou égale</td>
-<td>&gt;=</td>
-</tr>
-<tr class="even">
-<td>Inférieur ou égale</td>
-<td>&lt;=</td>
-</tr>
-</tbody>
-</table>
+<section id="module" class="level2">
+<h2 class="anchored" data-anchor-id="module">8 - Module</h2>
+<p>Les modules en Python sont des fichiers contenant du code Python réutilisable.</p>
 <ul>
-<li>Renvoient soit Vrai, soit Faux, en fonction du résultat de la comparaison.</li>
+<li>Organiser le code en regroupant des fonctions, des classes et des variables connexes.</li>
+<li>Importer un module : ‘import’</li>
+<li>Modules prêts à l’emploi pour des tâches diverses . ex : ‘NumPy’, ‘Pandas’, ‘Matplotlib’, ‘Seaborn’, ‘Scikit-Learn’, ‘TensorFlow’, ‘PyTorch’, ‘Django’, ‘Flask’, ‘Requests’</li>
 </ul>
-<p><strong>Les opérateurs logiques</strong> et, ou et non sont souvent combinés avec les opérateurs de comparaison.</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Opérateur logique</th>
-<th>Description</th>
-<th>Résultat</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>And</td>
-<td>and</td>
-<td>True si les deux propositions sont vraies</td>
-</tr>
-<tr class="even">
-<td>Or</td>
-<td>or</td>
-<td>True si au moins une des propositions est Vraie</td>
-</tr>
-<tr class="odd">
-<td>Not</td>
-<td>not</td>
-<td>inverse de l’instruction</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Les opérateurs d’appartenance</strong> in et not in sont utilisés pour vérifier si une valeur ou une chaîne de caractères se trouve à l’intérieur d’une autre valeur, chaîne de caractères ou séquence.</p>
-<table class="table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Opérateur logique</th>
-<th>Description</th>
-<th>Résultat</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>In</td>
-<td>in</td>
-<td>True si la valeur spécifiée est présente dans l’objet.</td>
-</tr>
-<tr class="even">
-<td>Not in</td>
-<td>not in</td>
-<td>True si la valeur spécifiée n’est pas présente dans l’objet.</td>
-</tr>
-</tbody>
-</table>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># comparaison</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dv">100</span> <span class="op">==</span> <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>True</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">100</span> <span class="op">==</span> <span class="dv">500</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>False</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">100</span> <span class="op">!=</span> <span class="dv">500</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>True</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">'Carbonara'</span> <span class="op">==</span> <span class="st">'Bolognaise'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>False</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">'Carbonara'</span> <span class="op">!=</span> <span class="st">'carbonara'</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="op">&lt;</span> <span class="dv">50</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>True</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Logique</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">not</span> (<span class="dv">100</span> <span class="op">&gt;</span> <span class="dv">500</span> ) <span class="kw">and</span> (<span class="dv">500</span> <span class="op">&gt;</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>True</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">100</span> <span class="op">&gt;</span> <span class="dv">500</span> ) <span class="kw">or</span> (<span class="dv">500</span> <span class="op">&gt;</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>True</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">100</span> <span class="op">&gt;</span> <span class="dv">500</span> ) <span class="kw">or</span> (<span class="dv">500</span> <span class="op">&gt;</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>True</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>liste <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">50</span>]</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="dv">40</span> <span class="kw">not</span> <span class="kw">in</span> liste</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>True</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> somme(a, b):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>resultat <span class="op">=</span> somme(<span class="dv">10</span>, <span class="dv">5</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(resultat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>15</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> monpackage <span class="im">import</span> operations</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>resultat <span class="op">=</span> operations.division(<span class="dv">90</span>, <span class="dv">10</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(resultat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>9.0</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> monpackage <span class="im">import</span> operations</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>resultat <span class="op">=</span> operations.division(<span class="dv">90</span>, <span class="dv">10</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(resultat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

@@ -19,13 +19,17 @@
 
 <iframe src="exampleC.html" width="800" height="600"></iframe>
 
+## Les Boucles
+<iframe src="exampleB.html" width="800" height="600"></iframe>
 
 
+## Les Fonctions
+<iframe src="exampleF.html" width="800" height="600"></iframe>
 
+## Conversion
+<iframe src="exampleConv.html" width="800" height="600"></iframe>
 
-
-
-
-
+## Module
+<iframe src="exampleM.html" width="800" height="600"></iframe>
 
 

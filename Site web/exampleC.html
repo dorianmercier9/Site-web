@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>DataCamp Light | Standalone example</title>
+  <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .exercise {
+      margin: 50px;
+    }
+
+    [data-datacamp-exercise] {
+        visibility: hidden;
+      }
+  </style>
+
+  <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
+</head>
+<body>
+  <div class="exercise">
+    <div class="title">
+      <h2>Exercice1</h2>
+    </div>
+    <p>Utilise une structure conditionnelle if...else en Python pour imprimer "if marche" si 30 est inférieur à 15, sinon imprime "else fonctionne".</p>
+
+    <div data-datacamp-exercise data-lang="python" data-height="auto">
+      <code data-type="pre-exercise-code"></code>
+      <code data-type="sample-code">
+        if 
+      </code>
+      <code data-type="solution"> 
+if 30 < 15:
+  print("if marche")
+else:
+  print("else fonctionne")
+    </code>
+
+      <code data-type="sct"> sct = '''
+        ex() %>% check_function("print") %>% check_args(0, result="if marche")
+        ex() %>% check_function("print") %>% check_args(0, result="else fonctionne")
+        '''</code>
+     
+      
+      <div data-type="hint">Vérifie l'indentation de tes instructions</div>
+    </div>
+  </div>
+  
+
+  <div class="exercise">
+    <div class="title">
+      <h2>Exercice 2 </h2>
+    </div>
+    <p>Dans cet exercice, tu vas écrire une fonction en Python qui prend en entrée un entier représentant un mois de l'année et qui retourne le nom correspondant à ce mois. Janvier == 1...</p>
+
+    <div data-datacamp-exercise data-lang="python" data-height="auto">
+      <code data-type="pre-exercise-code"></code>
+      <code data-type="sample-code">
+        def switch(mois)
+          if 
+      </code>
+      <code data-type="solution">
+def switch(mois)
+  if mois == 1:
+    return 'Janvier'
+  elif mois == 2:
+        return 'Fevrier'
+  elif mois == 3:
+        return 'Mars'
+  elif mois == 4:
+        return 'Avril'
+  elif mois == 5:
+        return 'Mai'
+  elif mois == 6:
+        return 'Juin'
+  elif mois == 7:
+        return 'Juillet'
+  elif mois == 8:
+        return 'Aout'
+  elif mois == 9:
+        return 'Septembre'
+  elif mois == 10:
+        return 'Octobre'
+  elif mois == 11:
+        return 'Novembre'
+  elif mois == 12:
+        return 'Decembre'
+  else:
+    return "Pas un mois de l'année"
+      </code>
+
+      <code data-type="sct">
+        sct = '''
+ex() %>% check_function("return") %>% check_args(0, result="Janvier")
+ex() %>% check_function("return") %>% check_args(0, result="Fevrier")
+ex() %>% check_function("return") %>% check_args(0, result="Mars")
+ex() %>% check_function("return") %>% check_args(0, result="Avril")
+ex() %>% check_function("return") %>% check_args(0, result="Mai")
+ex() %>% check_function("return") %>% check_args(0, result="Juin")
+ex() %>% check_function("return") %>% check_args(0, result="Juillet")
+ex() %>% check_function("return") %>% check_args(0, result="Aout")
+ex() %>% check_function("return") %>% check_args(0, result="Septembre")
+ex() %>% check_function("return") %>% check_args(0, result="Octobre")
+ex() %>% check_function("return") %>% check_args(0, result="Novembre")
+ex() %>% check_function("return") %>% check_args(0, result="Decembre")
+ex() %>% check_function("return") %>% check_args(0, result="Pas un mois de l'année")
+'''
+
+      </code>
+     
+      <div data-type="hint">
+        Pense à utiliser des structures conditionnelles (if, elif, else) pour cela.
+      </div>
+    </div>
+  </div>

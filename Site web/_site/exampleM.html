@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>DataCamp Light | Standalone example</title>
+  <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .exercise {
+      margin: 50px;
+    }
+
+    [data-datacamp-exercise] {
+        visibility: hidden;
+      }
+  </style>
+
+  <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
+</head>
+<body>
+  <div class="exercise">
+    <div class="title">
+      <h2>Exercice 1</h2>
+      <p>Définissez une fonction nommée somme prenant deux paramètres, a et b.</p>
+      <p>Dans la fonction, retournez la somme des deux paramètres a et b.</p>
+      <p>Appelez la fonction somme avec les valeurs 10 et 5.</p>
+      <p>Stockez le résultat retourné par la fonction dans une variable nommée resultat.</p>
+      <p>Enfin, affichez le résultat à l'aide de la fonction print.</p>
+    </div>
+
+    <div data-datacamp-exercise data-lang="python" data-height="auto">
+      <code data-type="pre-exercise-code"></code>
+      <code data-type="sample-code">
+
+      </code>
+      <code data-type="solution">
+        def somme(a, b):
+        return a + b
+    
+    resultat = somme(10, 5)
+    print(resultat)
+      </code>
+      <code data-type="sct">
+        def test_somme():
+        assert somme(10, 5) == 15, "La fonction somme ne retourne pas la somme correcte de 10 et 5"
+    
+    test_somme()
+    
+
+      </code>
+      <div data-type="hint">Assurez-vous de définir correctement la fonction somme pour qu'elle prenne deux paramètres, les additionne et retourne le résultat.</div>
+    </div>
+  </div>
+  

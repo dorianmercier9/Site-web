@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>DataCamp Light | Standalone example</title>
+  <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .exercise {
+      margin: 50px;
+    }
+
+    [data-datacamp-exercise] {
+        visibility: hidden;
+      }
+  </style>
+
+  <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
+</head>
+<body>
+  <div class="exercise">
+    <div class="title">
+      <h2>Exercice 1</h2>
+      <p>
+        Utilise la fonction type() pour déterminer le type de données de l'expression -10 + 50.
+        </p>
+        <p>Utilise la fonction type() pour déterminer le type de données de l'expression -10.4 + 50.</p>
+    </div>
+
+    <div data-datacamp-exercise data-lang="python" data-height="auto">
+      <code data-type="pre-exercise-code"></code>
+      <code data-type="sample-code">
+        type()
+        type()
+      </code>
+      <code data-type="solution"></code>
+      type(-10 + 50)
+      type(-10.4 + 50)
+      <code data-type="sct">
+        sct = '''
+        ex() %>% check_function("type") %>% check_args(0, result="int")
+        ex() %>% check_function("type") %>% check_args(1, result="float")
+        '''
+        
+      </code>
+      <div data-type="hint">
+        type(-10 + 50)
+        type(-10.4 + 50)
+
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="exercise">
+    <div class="title">
+      <h2>Exercice 2</h2>
+      <p>Creer la variable a = "Bonjour Paris" </p>
+      <p>Imprime le mot Bonjour grace aux index.</p>
+      <p>Imprime le troisième caractère à partir de la fin de la chaîne de caractères.</p>
+      <p>Imprime les caractères de la chaîne de caractères commençant au caractére 3 et se terminant au caractére 6.</p>
+    </div>
+
+    <div data-datacamp-exercise data-lang="python" data-height="auto">
+      <code data-type="pre-exercise-code"></code>
+      <code data-type="sample-code">
+        a = 
+        print()
+        print()
+        print()
+      </code>
+      <code data-type="solution"></code>
+      a =  "Bonjour Paris"
+      print(a[0:7])
+      print(a[-3]) 
+      print(a[2:6])
+      <code data-type="sct">
+        sct = '''
+        ex() %>% check_function("print") %>% check_result(correct)
+        ex() %>% check_function("print") %>% check_result(-3)
+        ex() %>% check_function("print") %>% check_result(slice(2, 6))
+        '''
+        
+      </code>
+      <div data-type="hint">
+        As tu pensé aux crochet ?
+        Attention index O = Caractére 1
+        
+
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <div class="exercise">
+    <div class="title">
+      <h2>Exercice 3</h2>
+      <p>Crée un dictionnaire nommé dico contenant les clés suivantes :
+        'nom' avec la valeur 'Jean',
+        'age' avec la valeur 50,
+        'pates préférées' avec la valeur 'Carbonara'
+        </p>
+        <p>Utilise ensuite la fonction type() pour vérifier le type de données de ce dictionnaire.</p>
+    </div>
+
+    <div data-datacamp-exercise data-lang="python" data-height="auto">
+      <code data-type="pre-exercise-code"></code>
+      <code data-type="sample-code">
+        dico = 
+        type()
+      </code>
+      <code data-type="solution"></code>
+      dico = {'nom': 'Jean', 'age': 50 , 'pates préférées' : 'Carbonara'}
+type(dico)
+      <code data-type="sct">
+        sct = '''
+        ex() %>% check_object("dico") %>% check_equal()
+        ex() %>% check_function("type") %>% check_args(0) %>% check_equal()
+        '''
+
+       
+      </code>
+      <div data-type="hint">
+        As tu pensé aux accolades ?
+        
+  
+
+</body>
+</html>

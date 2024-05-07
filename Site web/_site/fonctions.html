@@ -147,12 +147,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Boucles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./fonctions.html"> 
+    <a class="nav-link active" href="./fonctions.html" aria-current="page"> 
 <span class="menu-text">Fonctions</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./conversion.html" aria-current="page"> 
+    <a class="nav-link" href="./conversion.html"> 
 <span class="menu-text">Conversion</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./module.html"> 
+<span class="menu-text">Module</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./exo.html"> 
@@ -174,7 +178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#conversion-de-type-de-données" id="toc-conversion-de-type-de-données" class="nav-link active" data-scroll-target="#conversion-de-type-de-données">7 - Conversion de type de données</a></li>
+  <li><a href="#les-fonctions" id="toc-les-fonctions" class="nav-link active" data-scroll-target="#les-fonctions">6 - Les fonctions</a></li>
   </ul>
 </nav>
     </div>
@@ -184,42 +188,86 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="conversion-de-type-de-données" class="level2">
-<h2 class="anchored" data-anchor-id="conversion-de-type-de-données">7 - Conversion de type de données</h2>
+<section id="les-fonctions" class="level2">
+<h2 class="anchored" data-anchor-id="les-fonctions">6 - Les fonctions</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2022_08_Type-Conversion-in-Python.jpg" class="img-fluid figure-img"></p>
-<figcaption>Conversion</figcaption>
+<p><img src="https://nsinfo.yo.fr/images/menu_python.jpg" class="img-fluid figure-img"></p>
+<figcaption>Les boucles</figcaption>
 </figure>
 </div>
-<p>Python vous permet de modifier facilement les types de données afin de manipuler et de travailler efficacement.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># caractere -&gt; entier</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>num_str <span class="op">=</span> <span class="st">"50"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>num_int <span class="op">=</span> <span class="dv">50</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># num_int + num_str # ne fonctionne</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>num_int <span class="op">+</span> <span class="bu">int</span>(num_str) <span class="co"># fonctionne</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>les fonctions sont des blocs de code qui sont exécutés lorsque vous les appelez. Vous pouvez personnaliser les fonctions pour qu’elles effectuent différentes tâches en leur passant différents arguments.</p>
+<ul>
+<li>Définies à l’aide du mot-clé **“def”*, suivi du <strong>nom de la fonction</strong> et de <strong>parenthèses</strong>.</li>
+<li>Passer des <strong>arguments</strong> aux fonctions pour fournir des valeurs d’entrée.</li>
+<li>Les <strong>arguments arbitraires</strong> et les <strong>mots-clés arbitraires</strong> sont utilisés lorsque vous ne savez pas à l’avance combien d’arguments vous allez passer.
+<ul>
+<li>arguments arbitraires, utilisez *args</li>
+<li>mots-clés arbitraires, utilisez **kwargs.</li>
+</ul></li>
+<li>Chaque fonction doit être responsable d’une seule et unique fonctionnalité, et rien de plus.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fonctions renvoie un résultat </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fonction1():</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Bonjour!"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>premiere_fonction()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Oui!</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fonctions renvoie un résultat </span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nombre_carre(nombre): <span class="co"># argument nombre</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(nombre <span class="op">**</span> <span class="dv">2</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>nombre_carre(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>100</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># liste -&gt; tuple</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>liste <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">8</span>]</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>tuple_la_liste <span class="op">=</span> <span class="bu">tuple</span>(liste)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(tuple_la_liste)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>tuple</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># liste -&gt; set</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>set_la_liste <span class="op">=</span> <span class="bu">set</span>(liste)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(set_la_liste)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>set</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># dictionnaire -&gt; liste</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>dico <span class="op">=</span> {<span class="st">'nom'</span>: <span class="st">'Dorian'</span>, <span class="st">'age'</span>: <span class="dv">26</span> , <span class="st">'pates préférées'</span> : [<span class="st">'Carbonara'</span>,<span class="st">'Pesto'</span>]}</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>liste_cle <span class="op">=</span> <span class="bu">list</span>(dico.keys())</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>liste_valeur <span class="op">=</span>  <span class="bu">list</span>(dico.values())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(liste_cle)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(liste_valeur)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>[‘nom’, ‘age’, ‘pates préférées’] [‘Dorian’, 26, [‘Carbonara’, ‘Pesto’]]</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># chaine -&gt; liste</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>chaine <span class="op">=</span> <span class="st">"J'aime les pizzas"</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>liste_chaine <span class="op">=</span> <span class="bu">list</span>(chaine)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(liste_chaine)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>[‘J’, “‘“, ’a’, ‘i’, ‘m’, ‘e’, ’ ‘, ’l’, ‘e’, ‘s’, ’ ‘, ’p’, ‘i’, ‘z’, ‘z’, ‘a’, ‘s’]</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nombre_puissance(nombre, puissance): <span class="co"># argument nombre</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(nombre <span class="op">**</span> puissance)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>nombre_puissance(<span class="dv">10</span>, <span class="dv">3</span>) <span class="co"># donner les deux arguments !</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># nombre_puissance(5) # fonctionne pas</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>1000</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pratique pour utiliser les arguments dans l'ordre qu'on veut</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>nombre_puissance(puissance <span class="op">=</span> <span class="dv">3</span>, nombre <span class="op">=</span> <span class="dv">10</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>1000</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fonction qui renvoie un nombre à la puissance</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nombre_puissance(nombre, puissance): </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># documenter le code</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">    cette fonction calcule un nombre à la puissance et retourne le résultat.    </span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:    </span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">    nombre (int): le premier nombre </span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">    puissance (int): le deuxième nombre    </span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:    int : nombre a la puissance     </span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> nombre <span class="op">**</span> puissance</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># interaction  avec un utilisateur </span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>num <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Saississez un nombre entier : "</span>))</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>power <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Saississez un nombre entier : "</span>))</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Le résultat est :"</span>, nombre_puissance(nombre <span class="op">=</span> num, puissance <span class="op">=</span> power))</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="co">#Si premier nombre rentré = 10 et deuxieme nombre rentré = 3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>1000</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your name:"</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your age:"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Welcome,"</span>,name, <span class="st">"! you are now "</span>, age)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Enter your name: Dorian </span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Enter your age: 26</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Welcome, Dorian ! you are now 26</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Arguments arbitraire on ne connait pas le nombre de parametre à l'avance</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nombre_args(<span class="op">*</span>nombre):</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(nombre[<span class="dv">0</span>]<span class="op">*</span>nombre[<span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>nombre_args(<span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">4</span>, <span class="dv">90</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Multiplication de l'argument à la position [O] = 5 etde l'agument à la position [1] = 10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>50</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>args_tuple <span class="op">=</span> (<span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">9</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>nombre_args(<span class="op">*</span>args_tuple) <span class="co"># mettre etoile pour le tuple</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>30</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nombre_puissance(nombre, puissance): <span class="co"># argument nombre</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(nombre <span class="op">**</span> puissance)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pratique pour définir des clé d'arguments</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nombre_kwarg(<span class="op">**</span>nombre):</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Mon age est : '</span> <span class="op">+</span> nombre[<span class="st">'age'</span>] <span class="op">+</span> <span class="st">' et ma taille est : '</span> <span class="op">+</span> nombre[<span class="st">"taille"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>nombre_kwarg(age  <span class="op">=</span> <span class="st">'26'</span>, taille <span class="op">=</span> <span class="st">'1.75'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Mon age est : 26 et ma taille est : 1.75</p>
 
 
 </section>

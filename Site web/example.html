@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>DataCamp Light | Standalone example</title>
   <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
-  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="styles.css">
   <style>
     .exercise {
       margin: 50px;
@@ -33,11 +33,14 @@
         x = 10
         print(x)
         type(x)</code>
-      <code data-type="sct">
-
-        </code>
+      <code data-type="sct">sct = '''
+        ex() %>% check_object("x") %>% check_equal()
+        ex() %>% check_function("print") %>% check_args(0, result="10")
+        ex() %>% check_function("type") %>% check_args(0, result="<class 'int'>")
+        '''
+       </code>
       <div data-type="hint"></div>
-      
+      Assure-toi d'affecter la valeur 10 à la variable x en utilisant l'opérateur d'affectation (=).
     </div>
   </div>
 

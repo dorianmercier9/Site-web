@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>DataCamp Light | Standalone example</title>
+  <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .exercise {
+      margin: 50px;
+    }
+
+    [data-datacamp-exercise] {
+        visibility: hidden;
+      }
+  </style>
+
+  <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
+</head>
+<body>
+  <div class="exercise">
+    <div class="title">
+      <h2>Exercice 1</h2>
+      <p>Dans cet exercice, tu vas travailler avec deux variables : num_str et num_int.</p>
+
+      <p>Initialise la variable num_str avec la chaîne de caractères "50".</p>
+      <p>Initialise la variable num_int avec la valeur entière 50.</p>
+      <p>Ensuite, utilise l'opérateur d'addition + pour tenter d'additionner ces deux variables ensemble. Remarque que cette opération ne fonctionnera pas car tu essaies d'additionner une chaîne de caractères avec un entier.</p>
+        
+        Pour corriger cela, convertis d'abord la chaîne de caractères en entier en utilisant la fonction int(), puis effectue l'opération d'addition.</p>
+    </div>
+
+    <div data-datacamp-exercise data-lang="python" data-height="auto">
+      <code data-type="pre-exercise-code"></code>
+      <code data-type="sample-code">
+        num_str = 
+        num_int = 
+
+        
+      </code>
+      <code data-type="solution">
+        num_str = "50"
+        num_int = 50
+        # num_int + num_str # ne fonctionne
+        num_int + int(num_str) # fonctionne
+        ```
+        100
+        
+      </code>
+      <code data-type="sct">
+        sct = '''
+ex() %>% check_correct()
+'''
+
+      </code>
+      <div data-type="hint">
+        Il semble que tu essayes d'additionner une chaîne de caractères avec un entier. Que peux-tu faire pour que cette opération fonctionne correctement ?
+      </div>
+
+
+
+      <div class="exercise">
+        <div class="title">
+          <h2>Exercice 2</h2>
+          <p>Initialise une variable chaine avec la valeur "J'aime les pizzas".</p>
+          <p>Ensuite, convertis cette chaîne en une liste de caractères en utilisant la fonction list().</p>
+          <p>Enfin, affiche la liste ainsi obtenue.</p>
+
+        </div>
+    
+        <div data-datacamp-exercise data-lang="python" data-height="auto">
+          <code data-type="pre-exercise-code"></code>
+          <code data-type="sample-code">
+            chaine = "J'aime les pizzas"
+      
+          </code>
+          <code data-type="solution">
+            chaine = "J'aime les pizzas"
+            liste_chaine = list(chaine)
+            print(liste_chaine)
+            
+          </code>
+          <code data-type="sct">sct = '''
+            ex() %>% check_correct()
+            '''
+            
+
+          </code>
+          <div data-type="hint">Tu as une chaîne de caractères, mais tu veux la traiter comme une liste de caractères. Quelle fonction Python te permettrait de convertir une chaîne en liste ? Une fois que tu as la liste, n'oublie pas de l'afficher pour vérifier que tu as obtenu le résultat attendu.
+
+          </div>
+    

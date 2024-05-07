@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>DataCamp Light | Standalone example</title>
   <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
-  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="styles.css">
   <style>
     .exercise {
       margin: 50px;
@@ -37,9 +37,11 @@
       type(-10 + 50)
       type(-10.4 + 50)
       <code data-type="sct">
-        ex() %>% check_function("type") %>% check_args(0) %>% check_equal()
-        ex() %>% check_function("type") %>% check_args(1) %>% check_equal()
+        sct = '''
+        ex() %>% check_function("type") %>% check_args(0, result="int")
+        ex() %>% check_function("type") %>% check_args(1, result="float")
         '''
+        
       </code>
       <div data-type="hint">
         type(-10 + 50)
@@ -62,22 +64,23 @@
     <div data-datacamp-exercise data-lang="python" data-height="auto">
       <code data-type="pre-exercise-code"></code>
       <code data-type="sample-code">
+        a = 
         print()
         print()
         print()
       </code>
       <code data-type="solution"></code>
       a =  "Bonjour Paris"
-      print(a[0:6])
+      print(a[0:7])
       print(a[-3]) 
-      print(a[2:5])
+      print(a[2:6])
       <code data-type="sct">
         sct = '''
-        ex() %>% check_correct(print(a[0:7]))
-        ex() %>% check_correct(print(a[-3]))
-        ex() %>% check_correct(print(a[2:6]))
+        ex() %>% check_function("print") %>% check_result(correct)
+        ex() %>% check_function("print") %>% check_result(-3)
+        ex() %>% check_function("print") %>% check_result(slice(2, 6))
         '''
-
+        
       </code>
       <div data-type="hint">
         As tu pensé aux crochet ?

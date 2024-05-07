@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -89,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -109,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Conditions</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./boucles.html"> 
+    <a class="nav-link active" href="./boucles.html" aria-current="page"> 
 <span class="menu-text">Boucles</span></a>
   </li>  
   <li class="nav-item">
@@ -119,6 +153,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./conversion.html"> 
 <span class="menu-text">Conversion</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./module.html"> 
+<span class="menu-text">Module</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./exo.html"> 
@@ -140,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#bienvenue-sur-le-site-python-starter" id="toc-bienvenue-sur-le-site-python-starter" class="nav-link active" data-scroll-target="#bienvenue-sur-le-site-python-starter">Bienvenue sur le site Python Starter</a></li>
+  <li><a href="#les-boucles" id="toc-les-boucles" class="nav-link active" data-scroll-target="#les-boucles">Les boucles</a></li>
   </ul>
 </nav>
     </div>
@@ -150,36 +188,79 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="bienvenue-sur-le-site-python-starter" class="level3">
-<h3 class="anchored" data-anchor-id="bienvenue-sur-le-site-python-starter">Bienvenue sur le site Python Starter</h3>
+<section id="les-boucles" class="level2">
+<h2 class="anchored" data-anchor-id="les-boucles">Les boucles</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" class="img-fluid figure-img"></p>
-<figcaption>Logo Python</figcaption>
+<p><img src="https://olivierschmitt.fr/wp-content/uploads/2015/04/cours-python-les-boucles-1.jpg" class="img-fluid figure-img"></p>
+<figcaption>Les boucles</figcaption>
 </figure>
 </div>
-<p>Bienvenue sur votre site d’apprentissage de Python !</p>
-<p><span style="color:#7DF9FF; font-weight:bold;">À propos du site<span></span></span></p>
-<p>Notre site est conçu pour les débutants qui souhaitent apprendre à programmer en Python de manière simple et efficace. Nous proposons une série de cours organisés de manière progressive pour vous guider à travers les concepts fondamentaux de la programmation en Python.</p>
-<p><span style="color:#7DF9FF; font-weight:bold;">Les Variables<span></span></span></p>
-<p>Dans ce cours, vous apprendrez ce qu’est une variable en Python, comment les déclarer, les types de données qu’elles peuvent contenir, et comment les utiliser dans vos programmes.</p>
-<p><span style="color:#7DF9FF; font-weight:bold;">Les Types de Données<span></span></span></p>
-<p>Ce cours vous introduira aux différents types de données disponibles en Python, tels que les entiers, les flottants, les chaînes de caractères, les listes, les tuples et les dictionnaires.</p>
-<p><span style="color:#7DF9FF; font-weight:bold;">Les Opérateurs<span></span></span></p>
-<p>Découvrez les opérateurs arithmétiques, logiques et de comparaison en Python, ainsi que leur utilisation dans l’évaluation des expressions.</p>
-<p><span style="color:#7DF9FF; font-weight:bold;">Les Conditions<span></span></span></p>
-<p>Dans ce cours, vous apprendrez à utiliser les instructions if, else et elif pour créer des structures de contrôle conditionnelles dans vos programmes.</p>
-<p><span style="color:#7DF9FF; font-weight:bold;">Les Boucles<span></span></span></p>
-<p>Découvrez les boucles for et while en Python et apprenez à les utiliser pour itérer sur des séquences de données et exécuter des blocs de code répétitifs.</p>
-<p><span style="color:#7DF9FF; font-weight:bold;">Les Fonctions<span></span></span></p>
-<p>Ce cours vous enseignera la création et l’utilisation de fonctions en Python pour encapsuler du code réutilisable et modulaire.</p>
-<p><span style="color:#7DF9FF; font-weight:bold;">Les Conversions<span></span></span></p>
-<p>Apprenez à convertir des données entre différents types en Python, tels que la conversion de chaînes de caractères en nombres et vice versa.</p>
-<p><span style="color:#7DF9FF; font-weight:bold;">Les Modules<span></span></span></p>
-<p>Découvrez comment utiliser des modules en Python pour organiser et réutiliser du code, ainsi que pour étendre les fonctionnalités de base du langage.</p>
-<p><span style="color:#7DF9FF; font-weight:bold;">Exercices interactifs<span></span></span></p>
-<p>En plus des cours théoriques, nous proposons également des exercices interactifs pour chaque cours afin que vous puissiez mettre en pratique ce que vous avez appris. La pratique est essentielle pour maîtriser Python, alors n’hésitez pas à vous entraîner et à expérimenter avec le code !</p>
-<p>Commencez dès maintenant votre parcours d’apprentissage en explorant nos cours et en vous lançant dans les exercices interactifs. Bonne chance et bon apprentissage !</p>
+<p><strong>La boucle for</strong> est utilisée pour parcourir des structures de données : liste, tuple, tableau, chaîne de caractères ou un dictionnaire.</p>
+<blockquote class="blockquote">
+<p>La boucle commence par examiner le premier élément de la séquence, effectue des actions dans son corps, puis passe à l’élément suivant jusqu’à ce que la séquence soit terminée.</p>
+</blockquote>
+<ul>
+<li>Boucle avec mot-clé <strong>“for”</strong>, une <strong>variable temporaire</strong> pour contenir chaque élément, le mot-clé <strong>“in”</strong> et la séquence à parcourir, suivis de <strong>deux points</strong>. Jusqu’au bout de l’élément</li>
+<li>Appliquer des <strong>opérations sur la variable temporaire</strong> dans le corps de la boucle pour effectuer diverses opérations.</li>
+<li><strong>Imbriquer des for”</strong></li>
+<li>Sur les <em>dictionnaires</em>, on peut <strong>boucler sur les clés et les valeurs à l’aide de la méthode “items()”</strong>.</li>
+</ul>
+<p><strong>La boucle while</strong> itère sur un bloc de code tant qu’une condition spécifiée est vraie. Contrairement aux boucles “for”, les boucles “while” continuent l’itération tant que la condition reste vraie.</p>
+<ul>
+<li><strong>“break”</strong> pour quitter prématurément une boucle “while”, même si la condition est toujours vraie.</li>
+<li><strong>“else”</strong> peut être utilisée avec une boucle “while” pour spécifier un bloc de code qui s’exécutera lorsque la condition de la boucle ne sera plus vraie.</li>
+<li><strong>“continue”</strong> permet d’ignorer le code restant dans l’itération actuelle de la boucle et de passer à l’itération suivante.</li>
+<li>!! <strong>Soyez prudent lorsque vous utilisez “continue” afin d’éviter de créer des boucles infinies.</strong></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>nombres <span class="op">=</span> [<span class="dv">16</span>, <span class="dv">92</span>, <span class="dv">120</span>, <span class="dv">60</span>, <span class="dv">21</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> num <span class="kw">in</span> nombres:</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(num)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>16 92 120 60 21</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> hey <span class="kw">in</span> nombres:</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(hey)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>16 92 120 60 21</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dico <span class="op">=</span> {<span class="st">'nom'</span>: <span class="st">'Dorian'</span>, <span class="st">'age'</span>: <span class="dv">26</span> , <span class="st">'pates préférées'</span> : [<span class="st">'Carbonara'</span>,<span class="st">'Pesto'</span>]}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> d <span class="kw">in</span> dico.values():</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Dorian 26 [‘Carbonara’, ‘Pesto’]</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> d <span class="kw">in</span> dico.keys():</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>nom age glaces préférées</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> d <span class="kw">in</span> dico.keys():</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>nom -&gt; Dorian age -&gt; 26 pates préférées -&gt; [‘Carbonara’, ‘Pesto’]</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># while</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> number <span class="op">&lt;</span> <span class="dv">100</span>:</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(number)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        number <span class="op">=</span> number <span class="op">+</span> <span class="dv">10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>0 10 20 30 40 50 60 70 80 90</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> number <span class="op">&lt;</span> <span class="dv">50</span>:</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(number)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> number <span class="op">==</span> <span class="dv">30</span>:</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>        number <span class="op">=</span> number <span class="op">+</span> <span class="dv">10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>0 10 20 30</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># boucle qui se stop car prend la valeur +1 avant de s'afficher</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> number <span class="op">&lt;</span> <span class="dv">50</span>:</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    number <span class="op">=</span> number <span class="op">+</span> <span class="dv">10</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> number <span class="op">==</span> <span class="dv">30</span>:</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(number)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"ne satisfait plus la condition"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>10 20 40 50 ne satisfait plus la condition</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>: <span class="co"># gestion des erreurs</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>: </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Entrez un nombre entier : "</span>)) </span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span> </span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">ValueError</span>: </span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Mince ! Ce n'est pas un nombre entier. Essayez encore..."</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Nombre rentré = 10.5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Mince ! Ce n’est pas un nombre entier. Essayez encore…</p>
 
 
 </section>
