@@ -30,7 +30,7 @@ website:
 format:
   html:
     theme: cosmo
-    css: styles.css
+    css: styles2.css
     toc: true
 
 
