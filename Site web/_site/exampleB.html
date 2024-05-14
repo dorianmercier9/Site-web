@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>DataCamp Light | Standalone example</title>
   <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
   <style>
     .exercise {
       margin: 50px;
@@ -15,7 +15,7 @@
       }
   </style>
 
-  <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
+<script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
 </head>
 <body>
   <div class="exercise">
@@ -39,8 +39,6 @@
       <code data-type="solution">
         nombres = [16, 92, 120, 60, 21]
         
-        
-        
         for num in nombres:
             print(num)
         
@@ -63,46 +61,48 @@
       </div>
     </div>
   </div>
+</body>
+</html>
 
 
 
 
 
-  <div class="exercise">
-    <div class="title">
-      <h2>Exercice 2</h2>
-    </div>
-    <p>Initialise une variable number à la valeur 0.</p>
-    <p>Utilise une boucle while pour afficher les nombres tant que number est inférieur à 50.</p>
-    <p>À chaque itération de la boucle, affiche la valeur actuelle de number.</p>
-    <p>Si number atteint la valeur 30, utilise l'instruction break pour sortir de la boucle.</p>
-    <p>Assure-toi que les nombres sont affichés dans l'ordre croissant, avec un incrément de 10 à chaque itération.</p>
+<div class="exercise">
+  <div class="title">
+    <h2>Exercice 2</h2>
+  </div>
+  <p>Initialise une variable number à la valeur 0.</p>
+  <p>Utilise une boucle while pour afficher les nombres tant que number est inférieur à 50.</p>
+  <p>À chaque itération de la boucle, affiche la valeur actuelle de number.</p>
+  <p>Si number atteint la valeur 30, utilise l'instruction break pour sortir de la boucle.</p>
+  <p>Assure-toi que les nombres sont affichés dans l'ordre croissant, avec un incrément de 10 à chaque itération.</p>
 
-    <div data-datacamp-exercise data-lang="python" data-height="auto">
-      <code data-type="pre-exercise-code"></code>
-      <code data-type="sample-code">
-     number = 0
-        
-      </code>
-      <code data-type="solution">
-        number = 0
-        while number < 50:
-                print(number)
-                if number == 30:
-                    break
-                number = number + 10
-      </code>
+  <div data-datacamp-exercise data-lang="python" data-height="auto">
+    <code data-type="pre-exercise-code"></code>
+    <code data-type="sample-code">
+      number = 0
+    </code>
+    <code data-type="solution">
+      number = 0
+      while number < 50:
+        print(number)
+        if number == 30:
+          break
+        number = number + 10
+    </code>
 
-      <code data-type="sct">      sct = '''
-        ex() %>% check_object("number") %>% check_equal()
-        '''</code>
+    <code data-type="sct">
+      sct = '''
+      ex() %>% check_object("number") %>% check_equal()
+      '''
+    </code>
 
-      <div data-type="hint">
-        Assure-toi que l'expression dans la condition de la boucle while est correcte pour s'assurer que la boucle se termine lorsque number atteint la valeur 30. Vérifie également que tu utilises l'instruction break lorsque number atteint cette valeur pour sortir de la boucle.
-      </div>
+    <div data-type="hint">
+      Assure-toi que l'expression dans la condition de la boucle while est correcte pour s'assurer que la boucle se termine lorsque number atteint la valeur 30. Vérifie également que tu utilises l'instruction break lorsque number atteint cette valeur pour sortir de la boucle.
     </div>
   </div>
-
+</div>
 
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>DataCamp Light | Standalone example</title>
   <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
   <style>
     .exercise {
       margin: 50px;
@@ -15,52 +15,54 @@
       }
   </style>
 
-  <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
+<script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
 </head>
 <body>
   <div class="exercise">
     <div class="title">
-      <h2>Exercice1</h2>
+      <h2>Exercice 1</h2>
     </div>
     <p>Dans cet exercice, tu vas comparer deux nombres : 100 et 100 en utilisant l'opérateur d'égalité en Python.</p>
 
     <div data-datacamp-exercise data-lang="python" data-height="auto">
       <code data-type="pre-exercise-code"></code>
       <code data-type="sample-code">
-       
+        print()
       </code>
-      <code data-type="solution"></code>
-      100 == 100
-      <code data-type="sct">sct = '''
-        ex() %>% check_correct()
-        '''</code>
-      
+      <code data-type="solution"> 
+        print(100 == 100)
+      </code>
+
+      <code data-type="sct">
+        sct = '''
+        ex() %>% check_output_expr("True")
+        '''
+      </code>
 
       <div data-type="hint">Utilise l'opérateur d'égalité (==) pour comparer les deux nombres</div>
     </div>
   </div>
-
 </body>
 </html>
 
+
 <div class="exercise">
   <div class="title">
-    <h2>Exercice2</h2>
+    <h2>Exercice 2</h2>
   </div>
   <p>Dans cet exercice, tu vas comparer deux chaînes de caractères : Carbonara et Bolognaise en utilisant l'opérateur d'égalité en Python.</p>
 
   <div data-datacamp-exercise data-lang="python" data-height="auto">
     <code data-type="pre-exercise-code"></code>
-    <code data-type="sample-code">
-     
+    <code data-type="sample-code"></code>
+    <code data-type="solution">print('Carbonara' == 'Bolognaise')</code>
+    
+    <code data-type="sct">
+      sct = '''
+      ex() %>% check_output_expr("False")
+      '''
     </code>
-    <code data-type="solution">'Carbonara' == 'Bolognaise'</code>
     
-    <code data-type="sct">sct = '''
-      ex() %>% check_incorrect()
-      '''</code>
-    
-
     <div data-type="hint">Vérifie que tu as utilisé l'opérateur d'égalité (==) de manière appropriée.</div>
   </div>
 </div>

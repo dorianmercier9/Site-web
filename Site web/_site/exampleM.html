@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>DataCamp Light | Standalone example</title>
   <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
   <style>
     .exercise {
       margin: 50px;
@@ -15,7 +15,7 @@
       }
   </style>
 
-  <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
+<script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
 </head>
 <body>
   <div class="exercise">
@@ -35,15 +35,20 @@
       </code>
       <code data-type="solution">
         def somme(a, b):
-        return a + b
+            return a + b
     
-    resultat = somme(10, 5)
-    print(resultat)
+        resultat = somme(10, 5)
+        print(resultat)
       </code>
       <code data-type="sct">
-
+        sct = '''
+        ex() %>% check_function("somme") %>% check_args(2) %>% has_equal_value()
+        ex() %>% check_object("resultat") %>% has_equal_value()
+        ex() %>% check_function("print") %>% check_args(1, result=15)
+        '''
       </code>
       <div data-type="hint">Assurez-vous de définir correctement la fonction somme pour qu'elle prenne deux paramètres, les additionne et retourne le résultat.</div>
     </div>
   </div>
-  
+</body>
+</html>

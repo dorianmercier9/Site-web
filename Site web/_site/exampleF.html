@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>DataCamp Light | Standalone example</title>
   <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
   <style>
     .exercise {
       margin: 50px;
@@ -15,80 +15,44 @@
       }
   </style>
 
-  <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
+<script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
 </head>
 <body>
 
-  <div class="exercise">
-    <div class="title">
-      <h2>Exercice 1</h2>
-
-    </div>
-    <p>Définis une fonction nommée nombre_carre prenant un argument nombre.</p>
-    <p>À l'intérieur de la fonction, utilise l'opérateur d'exponentiation (**) pour calculer le carré du nombre.</p>
-    <p>Affiche le résultat du carré du nombre.</p>
-    <p>Ensuite, appelle la fonction nombre_carre avec le nombre 10 comme argument.</p>
-
-    <div data-datacamp-exercise data-lang="python" data-height="auto">
-      <code data-type="pre-exercise-code"></code>
-      <code data-type="sample-code">
-        def nombre_carre(nombre): 
-      </code>
-      <code data-type="solution">def nombre_carre(nombre): # argument nombre
-        print(nombre ** 2)
-        nombre_carre(10)</code>
-      
-      
-      <code data-type="sct">sct = '''
-        ex() %>% check_function("nombre_carre") %>% check_args(0) %>% check_result()
-        '''</code>
-      
-        <div data-type="hint">Just press 'Run'.</div>
-      Utilise l'opérateur d'exponentiation (**) pour calculer le carré du nombre passé en argument à la fonction nombre_carre
-    
-     </div>
+<div class="exercise">
+  <div class="title">
+    <h2>Exercice 1</h2>
   </div>
+  <p>Définis une fonction nommée nombre_carre prenant un argument nombre.</p>
+  <p>À l'intérieur de la fonction, utilise l'opérateur d'exponentiation (**) pour calculer le carré du nombre.</p>
+  <p>Affiche le résultat du carré du nombre.</p>
+  <p>Ensuite, appelle la fonction nombre_carre avec le nombre 10 comme argument.</p>
 
+  <div data-datacamp-exercise data-lang="python" data-height="auto">
+    <code data-type="pre-exercise-code"></code>
+    <code data-type="sample-code">
+      def nombre_carre(nombre): 
+    </code>
+    <code data-type="solution">
+      def nombre_carre(nombre): 
+        print(nombre ** 2)
+
+      nombre_carre(10)  # Appel de la fonction avec l'argument 10
+    </code>
+
+    <code data-type="sct">
+      sct = '''
+      ex() %>% check_function("nombre_carre") %>% check_args(0) %>% check_result()
+      '''
+    </code>
+      
+    <div data-type="hint">Just press 'Run'.</div>
+    Utilise l'opérateur d'exponentiation (**) pour calculer le carré du nombre passé en argument à la fonction nombre_carre
+  </div>
+</div>
+
+</body>
+</html>
 
   
 
-  <div class="exercise">
-    <div class="title">
-      <h2>Exercice 2</h2>
-    </div>
-    <p>Utilise la fonction input() pour demander à l'utilisateur d'entrer son nom:Dorian</p>
-    <p>Stocke le nom saisi  dans une variable appelée name.</p>
-    <p>Utilise à nouveau la fonction input() pour demander à l'utilisateur d'entrer son âge : 26.</p>
-    <p>Stocke l'âge saisi dans une variable appelée age.</p>
-    <p> Enfin, utilise la fonction print() pour afficher un message de bienvenue contenant le nom et l'âge saisis par l'utilisateur: "Welcome Dorian you are now 26</p>
-
-    <div data-datacamp-exercise data-lang="python" data-height="auto">
-      <code data-type="pre-exercise-code"></code>
-      <code data-type="sample-code">
-        name = 
-        age = 
-      </code>
-      <code data-type="solution"></code>
-      name = input("Enter your name:")
-      age = input("Enter your age:")
-
-      print("Welcome,",name, "! you are now ", age)
-      
-      <code data-type="sct">sct = '''
-        ex() %>% check_object("name") %>% check_equal()
-        ex() %>% check_object("age") %>% check_equal()
-        ex() %>% check_function("print") %>% check_args(0, result="Welcome, Dorian ! You are now 26")
-        '''</code>
-      
-
-      
-      <div data-type="hint">    Hint :
-
-        Utilise la fonction input() pour demander à l'utilisateur son nom et son âge, puis stocke ces informations dans les variables name et age. Ensuite, utilise la fonction print() pour afficher un message de bienvenue avec ces informations.</div>
-      
-
-
-
-    
-     </div>
-  </div>

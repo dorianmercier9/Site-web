@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>DataCamp Light | Standalone example</title>
   <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico'/>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
   <style>
     .exercise {
       margin: 50px;
@@ -15,7 +15,7 @@
       }
   </style>
 
-  <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
+<script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
 </head>
 <body>
   <div class="exercise">
@@ -26,100 +26,95 @@
     <div data-datacamp-exercise data-lang="python" data-height="auto">
       <code data-type="pre-exercise-code"></code>
       <code data-type="sample-code">
-        
-       x = 
+        x = 
       </code>
       <code data-type="solution">
         x = 10
         print(x)
-        type(x)</code>
-      <code data-type="sct">sct = '''
+        type(x)
+      </code>
+      <code data-type="sct">
+        sct = '''
         ex() %>% check_object("x") %>% check_equal()
         ex() %>% check_function("print") %>% check_args(0, result="10")
         ex() %>% check_function("type") %>% check_args(0, result="<class 'int'>")
         '''
-       </code>
+      </code>
       <div data-type="hint"></div>
       Assure-toi d'affecter la valeur 10 à la variable x en utilisant l'opérateur d'affectation (=).
     </div>
   </div>
-
-
-  <div class="exercise">
-    <div class="title">
-      <h2>Exercice 2</h2>
-      <p>Affecte les valeurs suivantes aux variables x, y, et z respectivement : "Carbonara", "Bolognaise", et "Pesto".</p>
-      <h2>Affectation de valeurs différentes</h2>
-    </div>
-    <div data-datacamp-exercise data-lang="python" data-height="500">
-      <code data-type="pre-exercise-code"></code>
-      <code data-type="sample-code">
-        x, y, z = 
-      </code>
-      <code data-type="solution">
-        x, y, z = "Carbonara", "Bolognaise", "Pesto"
-        print(x)
-        print(y)
-        print(z)
-        
-      </code>
-      <code data-type="sct">
-        sct = '''
-        ex() %>% check_object("x") %>% check_equal()
-        ex() %>% check_object("y") %>% check_equal()
-        ex() %>% check_object("z") %>% check_equal()
-        '''
-        
-      </code>
-      <div data-type="hint">
-        <p>As tu pensé aux quotes?
-          As tu pensé à séparer tes variables par des virgules?
-        </p>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="exercise">
-    <div class="title">
-      <h2>Exercice 3</h2>
-      <p>Affecte les valeurs suivantes aux variables x, y, et z respectivement : 2, 3, et 4.
-        Utilise ensuite la fonction print pour afficher la somme des valeurs de x, y, et z.</p>
-      <h2>Affectation de valeurs différentes</h2>
-    </div>
-    <div data-datacamp-exercise data-lang="python" data-height="500">
-      <code data-type="pre-exercise-code"></code>
-      <code data-type="sample-code">
-        x = 
-        y = 
-        z = 
-      </code>
-      <code data-type="solution">
-        x = 2
-        y = 3
-        z = 4
-        print(x+y+z)
-
-      </code>
-      <code data-type="sct">
-        
-        sct = '''
-        ex() %>% check_object("y") %>% check_equal()
-        ex() %>% check_object("z") %>% check_equal()
-        ex() %>% check_function("print") %>% check_args(incorrect_msg = "Assure-toi d'ajouter correctement les variables x, y et z.") %>% check_result()
-        '''
-        
-        
-      </code>
-      <div data-type="hint"> >x = 2
-        y = 3
-        z = 4
-        print(x+y+z)
-        <p>
-        </p>
-      </div>
-    </div>
-  </div>
-
 </body>
 </html>
+
+
+<div class="exercise">
+  <div class="title">
+    <h2>Exercice 2</h2>
+    <p>Affecte les valeurs suivantes aux variables x, y, et z respectivement : "Carbonara", "Bolognaise", et "Pesto".</p>
+    <h2></h2>
+  </div>
+  <div data-datacamp-exercise data-lang="python" data-height="500">
+    <code data-type="pre-exercise-code"></code>
+    <code data-type="sample-code">
+      x, y, z = 
+    </code>
+    <code data-type="solution">
+      x, y, z = "Carbonara", "Bolognaise", "Pesto"
+      print(x)
+      print(y)
+      print(z)
+    </code>
+    <code data-type="sct">
+      sct = '''
+      ex() %>% check_object("x") %>% check_equal()
+      ex() %>% check_object("y") %>% check_equal()
+      ex() %>% check_object("z") %>% check_equal()
+      '''
+    </code>
+    <div data-type="hint">
+      <p>As tu pensé aux quotes?
+        As tu pensé à séparer tes variables par des virgules?
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  
+<div class="exercise">
+  <div class="title">
+    <h2>Exercice 3</h2>
+    <p>Affecte les valeurs suivantes aux variables x, y, et z respectivement : 2, 3, et 4.
+      Utilise ensuite la fonction print pour afficher la somme des valeurs de x, y, et z.</p>
+    <h2></h2>
+  </div>
+  <div data-datacamp-exercise data-lang="python" data-height="500">
+    <code data-type="pre-exercise-code"></code>
+    <code data-type="sample-code">
+      x = 
+      y = 
+      z = 
+    </code>
+    <code data-type="solution">
+      x = 2
+      y = 3
+      z = 4
+      print(x+y+z)
+    </code>
+    <code data-type="sct">
+      sct = '''
+      ex() %>% check_object("y") %>% check_equal()
+      ex() %>% check_object("z") %>% check_equal()
+      ex() %>% check_function("print") %>% check_args(incorrect_msg = "Assure-toi d'ajouter correctement les variables x, y et z.") %>% check_result()
+      '''
+    </code>
+    <div data-type="hint">
+      <p> >x = 2
+        y = 3
+        z = 4
+        print(x+y+z)
+      </p>
+    </div>
+  </div>
+</div>
